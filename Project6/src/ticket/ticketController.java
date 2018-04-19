@@ -119,8 +119,11 @@ public class ticketController {
                 new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent event) {
-                ArrayList<ticket> tick = tickModel.getCitations();
-                tickModel.storeTicketObject(tick);
+                //ArrayList<ticket> tick = tickModel.getCitations();
+                //tickModel.storeTicketObject(tick);
+                ticket tick = tickModel.ticketDB.get(tickView.getIndex());
+                tickModel.insertTicketToDatabase(tick);
+                
             }
         }
         );
