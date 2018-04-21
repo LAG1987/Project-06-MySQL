@@ -590,7 +590,7 @@ public class ticketView extends GridPane {
     private Button add = new Button("Add");
     private Button next = new Button(">>");
     private Button paid = new Button("Paid/Unpaid");
-    private Button print = new Button("Print to File");
+    private Button print = new Button("Add to Database");
     private Button exit = new Button("Exit");
     private Button display = new Button("Display Ticket");
 
